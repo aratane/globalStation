@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Radio Electro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="favourites_file_name">favourites</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_favorite">Favorite</string>
+    <string name="castio">GlobalOne</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-6797096502373603/2620712970</string>
+    <string name="interstitial_banner_id">ca-app-pub-6797096502373603/4876175371</string>
+
+    <string name="title_activity_podcast">Podcast</string>
+    <string name="loading">Loading...</string>
+    <string name="file_not_found">File not found</string>
+    <string name="title_activity_offline_podcast">Offline</string>
+    <string name="now_playing">Now playing..</string>
+    <string name="radio_menu">Radio</string>
+    <string name="news_menu">News</string>
+    <string name="podcast_menu">Podcast</string>
+    <string name="offline_menu">Offline</string>
+    <string name="about_menu">About</string>
+    <string name="apps_menu">More apps</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <LinearLayout
+        android:id="@+id/newsdthumbnail"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#fff"
+            android:src="@drawable/defimage"
+            android:id="@+id/newsImage"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trackText"
+        android:padding="3dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/newsdthumbnail">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@id/thumbnail"
+            android:layout_toRightOf="@id/thumbnail"
+            android:id="@+id/trackNameText"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:ellipsize="end"
+            android:singleLine="false"
+
+
+            android:layout_weight="10"
+            android:gravity="center_vertical|left"
+            android:textStyle="normal"
+            android:layout_gravity="center|left"
+            android:autoText="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

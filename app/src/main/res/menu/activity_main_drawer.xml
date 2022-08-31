@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_camera"
+
+            android:icon="@drawable/networking"
+            android:title="@string/radio_menu" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/person"
+            android:title="@string/news_menu" />
+        <item
+            android:id="@+id/nav_podcast"
+            android:icon="@drawable/circle"
+            android:title="@string/podcast_menu" />
+        <item
+            android:id="@+id/nav_podcast_offline"
+            android:icon="@drawable/circle"
+            android:title="@string/offline_menu" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/animals"
+            android:title="@string/about_menu" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/application"
+            android:title="@string/apps_menu" />
+    </group>
+
+
+
+</menu>

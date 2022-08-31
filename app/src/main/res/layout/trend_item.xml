@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#151515">
+    <LinearLayout
+        android:id="@+id/newsdthumbnail"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+
+
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/trendstationImage"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trendstationNameLayout"
+        android:padding="3dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/newsdthumbnail"
+        android:layout_toEndOf="@+id/newsdthumbnail">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thumbnail"
+            android:layout_toRightOf="@id/thumbnail"
+            android:id="@+id/stationNameText"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:ellipsize="end"
+            android:singleLine="true"
+
+
+            android:layout_weight="10"
+            android:gravity="center_vertical|left"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/trendtextView"
+            android:textSize="50dp"
+            android:textStyle="normal"
+            android:textColor="#e3105a" />
+
+    </LinearLayout>
+
+</RelativeLayout>

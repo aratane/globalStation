@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="info.appteve.radioelectro.RadioActivity"
+    android:background="#130c2d">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentLeft="false"
+
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layoutMode="clipBounds"
+        android:id="@+id/linearLayout"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:background="#100724">
+
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="370dp"
+            android:id="@+id/coverImage"
+            android:src="@drawable/defimage"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:maxWidth="600dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginRight="-15dp"
+            android:contentDescription="mainImage"
+            android:layout_gravity="center_horizontal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/castio"
+                android:id="@+id/radiotextField"
+                android:textAlignment="center"
+                android:layout_above="@+id/playBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center_horizontal"
+                android:typeface="normal"
+                android:textColor="#ffffff"
+
+                android:textSize="15dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:layout_gravity="center_horizontal"
+            android:accessibilityLiveRegion="polite"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/favBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:layout_marginLeft="0dp"
+
+                android:onClick="favor_Click"
+                android:layout_gravity="bottom"
+                android:background="#120a31"
+                android:text="FAVORITE"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/chatBtn"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="true"
+                android:onClick="chat_Click"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#200843"
+                android:textColor="#ffffff"
+                android:text="SHARE" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/playBtn"
+                android:layout_alignParentBottom="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#2b0e6e"
+                android:text="PLAY"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

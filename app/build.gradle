@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "info.appteve.radioelectro"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 2
+        versionName "2.0"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+
+        manifestPlaceholders = [onesignal_app_id: "34dce20a-3b42-4b5a-bc2f-ba46f2e4ed60",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    compile 'com.github.kanytu:android-parallax-listview:v1.1'
+    compile 'com.koushikdutta.ion:ion:2.1.8'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'jp.wasabeef:blurry:2.0.2'
+    compile 'com.onesignal:OneSignal:3.+@aar'
+    compile 'com.google.android.gms:play-services:10.0.1'
+    compile "com.google.android.gms:play-services-location:+"
+    compile project(':lib')
+
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
